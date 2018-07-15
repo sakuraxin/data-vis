@@ -70,7 +70,7 @@ var context = svg.append("g")
     .attr("class", "context")
     .attr("transform", "translate(" + margin2.left + "," + margin2.top + ")");
 
-d3.csv(".data/world life expectanct at birth, total.csv", type, function(error, data) {
+d3.csv("data/world life expectanct at birth, total.csv", type, function(error, data) {
     if (error) throw error;
     //console.log(data);
 

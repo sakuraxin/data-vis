@@ -11,7 +11,7 @@ dataset = {
 };
 
 var diameter = 650;
-var color = d3.scaleOrdinal(d3.schemeCategory20);
+var color = d3.scaleOrdinal(d3.schemeCategory10);
 var bubble = d3.pack(dataset)
     .size([diameter, diameter])
     .padding(15);

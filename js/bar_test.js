@@ -134,7 +134,8 @@ d3.select(this).attr('stroke', 'black').attr('fill', "orangered").attr('stroke-w
 
 var content = '<span class="name">Country: </span><span class = "value">' +
                 "Japan" +
-                '</span><br/>' +
+                '</span><br/>' + '<span class="name">Total: </span><span class="value">' +
+                (japanle[i] + sierrale[i]).toFixed(1) + 
                 '<span class="name">Average life expetancy: </span><span class="value">' +
                 japanle[i] + '<span class="name">  Difference: </span><span class="value">' +
                 (japanle[i] - sierrale[i]).toFixed(1) + 

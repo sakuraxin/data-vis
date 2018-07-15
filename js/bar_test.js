@@ -47,8 +47,8 @@ var sierrale = [38.7,
 var margin = {top: 5, right: 5, bottom: 110, left: 50};
 // here, we want the full chart to be 700x200, so we determine
 // the width and height by subtracting the margins from those values
-var fullWidth = 960;
-var fullHeight = 650;
+var fullWidth = 860;
+var fullHeight = 500;
 // the width and height values will be used in the ranges of our scales
 var width = fullWidth - margin.right - margin.left;
 var height = fullHeight - margin.top - margin.bottom;

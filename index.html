@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Life Expectany</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale = 1.0, user-scalable = no">
+    <meta name="description" content="">
+    <meta name="author" content="Xin Qu">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="stylesheet" href="./css/reveal.css">
+    <link rel="stylesheet" href="./css/theme/sky.css">
+    <link rel = "stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/bubbles_area.css">
+    <link rel="stylesheet" href="./css/bubbles.css">
+    <link rel="stylesheet" href="./css/world_le.css">
+
+    <!--Load d3-->
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
+    <!-- Theme used for syntax highlighting of code -->
+    <!--
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    -->
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <style></style>
+</head>
+<body>
+    <!--
+    <div id="header">
+        <a href="#" class="navigate-left">Life Expectancy</a>
+    </div>
+    -->
+    <div class="reveal">
+        <div class="slides">
+            <section id="slide_1">
+                <!--content of slide 1-->
+                <div id="slide1">
+                    <h2>Life Expectancy</h2>
+                    <p>Final Project for CS 498 Data Visualization</p>
+                    <p><small>Data source could be found through the link: <strong><a href="http://databank.worldbank.org/data/reports.aspx?source=health-nutrition-and-population-statistics">Data Source</a></strong></small></p>
+                    <p><small>July 2018</small></p>
+                    <p><small>Xin Qu</small></p>
+                </div>
+                <!-- end of content -->
+            </section>
+            <section id = "slide_2">
+                <!--content of slide 2-->
+                <h3>About this Visualization</h3>
+                <small>
+                    <p align = "justify">This visualization uses the Intercative SlideShow to tell the story of <strong><a href="http://databank.worldbank.org/data/reports.aspx?source=health-nutrition-and-population-statistics">LIFE EXPECTANCY</a></strong>.
+                    Built on scenes, with annotations, various parameters and some triggers. 
+                    <!--
+                    More details goes here:   
+                    <em><strong><a href="#slide_4">ABOUT THE DATASET</a></strong></em> (slide 4).
+                    -->
+                    </p>
+                    <p align = "justify">
+                        There are four charts in this visualization, line chart shows the world life expectancy from year 1960 to year 2016, 
+                        bubble charts show the average life expectancy of each area from year 2000 to year 2016 
+                        and the average life expectancy of each country during the same time period, 
+                        bar chart shows the life expectancy of Japan and Sierra Leone from year 2000 to year 2016. 
+                    </p>
+                </small>
+                <!-- end of content -->
+            </section>
+            <section>
+                <!--content of slide 3-->
+                <h3>Elements of This Visualization</h3>
+                <small>
+                    <ol>
+                        <li class="fragment" data-fragment-index="1"><strong>Scenes</strong></li>
+                        <p class="fragment" data-fragment-index="2">There are nine slides, including four scenes in this presentation.
+                            Each slide can be navigated through guiding arrows in the right bottom corner.
+                        Press <em><strong>Esc</strong></em> key at any point to get an overview of all scenes.
+                        </p>
+                        <li class="fragment" data-fragment-index="3"><strong>Annotations</strong>: More details of each scence goes here:   
+                            <em><strong><a href="#slide_4">ABOUT THE DATASET</a></strong></em> (slide 4). </li>
+                        <p class="fragment" data-fragment-index="4"><strong>Tooltips</strong> with country name and corresponding average life expectancy and difference, <strong>labels</strong> of each bubble & <strong>legends</strong> for each group and two specific countries.</p>
+                        <li class="fragment" data-fragment-index="5"><strong>Parameters</strong></li>
+                        <p class="fragment" data-fragment-index="6">The main parameters of this story are <strong>country and area names</strong>, corresponding <strong>life expectancy</strong> and <strong>years</strong>.</p>
+                        <li class="fragment" data-fragment-index="7"><strong>Triggers</strong></li>
+                        <p class="fragment" data-fragment-index="8"><strong>Zoom and Brush</strong> of time axis to filter data of world life expectancy, <strong>buttons</strong> to trigger updates with parameters of gourp.</p>
+                    </ol>
+                </small>
+                <!-- end of content -->
+            </section>
+            <section id = "slide_4">
+                <!--content of slide 4-->
+                <h4>About the dataset</h4>
+                <small align = "justify" style = "text-indent: 50px">The dataset could be found through <strong><a href="http://databank.worldbank.org/data/reports.aspx?source=health-nutrition-and-population-statistics">LIFE EXPECTANCY</a></strong>, 
+                named "life expectancy at birth, total.csv" which contains all the data of each country, area and world from year 1960 to 2016 (exclude 2017 since data of 2017 are not available). 
+                This visualization is focus on the world life expectancy from 1960 to 2016, average life expectancy of each country and area from year 2000 to 2016. From the analysis of average Life
+                Expectancy of each country from year 2000 to year 2016, <em><strong>Japan</strong></em> has the largest average life expectany and <em><strong>Sierra Leone</strong></em> has the 
+                smallest life expectancy. The last slide with bar charts shows the life expectancy and the difference of <em><strong>Japan & Sierra Leone</strong></em> from year 2000 to year 2016 (exclude 2017 since data of 2017 are not available).
+                I used python to generate useful data file and filter data.</small>
+                <!-- end of content -->
+            </section>
+            <section>
+                <section>
+                    <!--content of vertical slide 1-->
+                    <small>Life Expectancy at birth of the World from year 1960 to year 2016</small>
+                    <div id='world_le'></div> 
+                    <!-- end of content -->
+                </section>
+                <section>
+                    <!--content of vertical slide 2-->
+                    <small>Average Life Expectancy of each Area from year 2000 to year 2016</small>
+                    <div id='bubbles_area', style="max-height: 80%"></div>
+                    <!-- end of content -->
+                </section>
+                <section>
+                    <!--content of vertical slide 3-->
+                    <small align = "justify" style = "text-indent: 50px">Then the next slide presents the average life expectancy of each country from year 2000 to 2016.
+                        Based on the data analysis, the average life expectancy of world from year 2000 to 2016 is around 71.
+                        All the countries will assign to 4 different categories by the corresponding average life expectancy.
+                        <strong >Group 1</strong> is the countries with average life expectancy in range [75, 85],
+                        <strong>Group 2</strong> is the countries with average life expectancy in range [71, 75],
+                        <strong>Group 3</strong> is the countries with average life expectancy in range [51, 71],
+                        <strong>Group 4</strong> is the countries with average life expectancy in range [45, 51]. 
+                        Click on <em><strong>By groups</strong></em> button to view avergae life expectancy from 2000 to 2016 of all countries by groups. 
+                    </small>
+                    <!-- end of content -->
+                </section>
+                <section>
+                    <!--content of vertical slide 4-->
+                    <small>Average Life Expectancy of each Country from year 2000 to 2016</small>
+                    <div class="container">
+
+                        <div style="margin-left:60px;" id="toolbar">
+                            <button id="all" class="button active">All countries</button>
+                            <button id="year" class="button">By groups</button>
+                    </div>
+                    <div id="categoryLegend">
+                        <div class="categoryLegend"> <p class="category-name"><span class="key-dot Avg85"></span>&ensp;75 < Avg. Life Expectancy < 85&ensp;
+                        </p> </div>
+                        <div class="categoryLegend"> <p class="category-name"><span class="key-dot Avg75"></span>&ensp;71 < Avg. Life Expectancy < 75&ensp;
+                        </p> </div>
+                        <div class="categoryLegend"> <p class="category-name"><span class="key-dot Avg71"></span>&ensp;51< Avg. Life Expectancy < 71&ensp;
+                        </p> </div>
+                        <div class="categoryLegend"> <p class="category-name"><span class="key-dot Avg51"></span>&ensp;45 < Avg. Life Expectancy < 51&ensp;
+                        </p> </div>
+                    </div>
+                    <div id='bubbles'></div>
+                    <!-- end of content -->
+                </section>
+                <section>
+                    <!--content of vertical slide 5-->
+                    <small>Life Expectancy of Japan and Sierra Leone from 2000 to 2016</small>
+                    
+                    <div id='stackedbar'></div>
+                    <div id="categoryLegend">
+                            <div class="categoryLegend"> <p class="category-name"><span class="key-dot Japan"></span>&ensp;Life Expectancy of Japan&ensp;
+                            </p> </div>
+                            <div class="categoryLegend"> <p class="category-name"><span class="key-dot Sierra_Leone"></span>&ensp;Life Expectancy of Sierra Leone&ensp;
+                            </p> </div>
+                    </div>
+                    
+                    <!-- end of content -->
+                </section>
+                
+            </section>
+           
+        </section>
+            <section>
+                <!--content of vertical slide 4-->
+                <h4>The end</h4>
+                <small align = "left">
+                    Thanks to 
+                    <li>hakimel for reveal.js <a href="https://revealjs.com/#/"></a></li>
+                    <li>Data Bank for data source</li>
+                </small>
+            </section>
+        </div>
+    </div>
+    <script src="js/reveal.js"></script>
+    <script>Reveal.initialize();</script>
+    <script src="./js/tooltip.js"></script>
+
+
+    <script src = "./js/bar_test.js"></script>
+    <script src="./js/bubbles_area.js"></script>
+    <script src="./js/world_le.js"></script>
+   
+    <script src="./js/bubbles.js"></script>
+    
+    
+    
+    <!--
+    <script src="./js/japan.js"></script>
+    -->
+    
+</body>
+</html>

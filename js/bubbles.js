@@ -350,7 +350,7 @@ function addCommas(nStr) {
 }
 
 // Load the data.
-d3.csv('http://localhost:8888/country average life ex, 2000-2017.csv', display);
+d3.csv('.data/country average life ex, 2000-2017.csv', display);
 
 // setup the buttons.
 setupButtons();

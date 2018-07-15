@@ -132,10 +132,11 @@ function showDetail(d, i) {
 // change outline to indicate hover state.
 d3.select(this).attr('stroke', 'black').attr('fill', "orangered").attr('stroke-width', 2);
 
-var content = '<span class="name">Country: </span><span class = "value">' +
+var content = '<span class="name">Total life expectancy of Japan and Sierra Leone: </span><span class="value">' +
+                (japanle[i] + sierrale[i]).toFixed(1) + '</span><br/>'+ 
+                '<span class="name">Country: </span><span class = "value">' +
                 "Japan" +
-                '</span><br/>' + '<span class="name">Total: </span><span class="value">' +
-                (japanle[i] + sierrale[i]).toFixed(1) + 
+                '</span><br/>' +  
                 '<span class="name">Average life expetancy: </span><span class="value">' +
                 japanle[i] + '<span class="name">  Difference: </span><span class="value">' +
                 (japanle[i] - sierrale[i]).toFixed(1) + 

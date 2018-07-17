@@ -85,17 +85,18 @@ var yAxis_bar = d3.axisLeft(leScale);
   
   
   // draw the axes
-var xAxisEle = svg.append('g')
-        .classed("x axis", "true").attr('transform', 'translate(0,' + height + ')')
-        .call(xAxis_bar);
-var xText = xAxisEle.append('text')
+svg.append('g')
+    .attr("x axis", "true")
+    .attr('transform', 'translate(0,' + height + ')')
+    .call(xAxis_bar)
+    //.attr("d", "M0.5,6V0.5H805.5V06")
+    .append('text')
     .attr('transform', 'rotate(0)translate(+' + 400+ ',60)')
     .style('text-anchor', 'middle')
     .style('fill', 'black')
     .attr('dy', '-1.5em')
     .style('font-size', 14)
     .text('Year');
-
 
 var yAxisEle = svg.append('g')
     .classed('y axis', true)

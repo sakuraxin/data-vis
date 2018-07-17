@@ -86,7 +86,7 @@ var yAxis_bar = d3.axisLeft(leScale);
   
   // draw the axes
 svg.append('g')
-    .classed('x axis', true)
+    .attr("class", "axis axis--x")
     .attr('transform', 'translate(0,' + height + ')')
     .call(xAxis_bar)
     .append('text')

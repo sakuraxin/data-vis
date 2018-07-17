@@ -59,15 +59,20 @@
                 <!--content of slide 2-->
                 <h3>About this Visualization</h3>
                 <small>
-                    <p align = "justify">This visualization uses the Interactive Slideshow to tell the story of <u><strong><a href="http://databank.worldbank.org/data/reports.aspx?source=health-nutrition-and-population-statistics">LIFE EXPECTANCY</a></strong></u>.
-                    Built on scenes, with annotations, various parameters and some triggers (will be explained more in the next slide). 
+                    <p align = "justify">This visualization uses the Interactive Slideshow to tell the story of 
+                        <u><strong><a href="http://databank.worldbank.org/data/reports.aspx?source=health-nutrition-and-population-statistics">LIFE EXPECTANCY</a></strong></u>.
+                    Built on scenes following a template of visual consistency , with various annotations, parameters and some triggers (will be explained more in the next slide). 
         
                     More details of data cleaning information go here:   
                     <em><strong><a href="#slide_4">ABOUT THE DATASET</a></strong></em> (slide 4).
                     
                     </p>
                     <p align = "justify">
-                        There are four charts in this visualization:
+                        The four scenes follow the structrue as below: the first scene focuses on the world life expectancy from year 1960 to 2016;
+                        the second scene focuses on the average life expectancy during year 2000 and year 2016 of each area; 
+                        the third scene focuses on the average life expectancy during the same year period of each country;
+                        the last scene focuses on the life expectancy during the same year period of two selected countries with larest and smallest average life expectancy. </br>
+                        TThe four charts/scenes in this visualization:
                         <li align = "left">Line chart shows the world life expectancy from year 1960 to year 2016.</li>
                         <li align = "left">Two Bubble charts: area bubble chart shows the average life expectancy of each area from year 2000 to year 2016 
                         and country bubble chart shows the average life expectancy of each country during the same time period.</li> 
@@ -78,7 +83,8 @@
             </section>
             <section>
                 <!--content of slide 3-->
-                <h4>Elements of This Visualization</h4>
+                <h5>Elements of This Visualization</h5>
+                <small>Belows are overview of elements and more details will be explained in the chart or in the slide right ahead of the chart. </small>
                 <small>
                     <ol>
                         <li class="fragment" data-fragment-index="1"><strong>Scenes</strong></li>
@@ -91,8 +97,10 @@
                             More details of each scence go here:   
                             <u><em><strong><a href="#slide_4">ABOUT THE DATASET</a></strong></em></u> (slide 4). </li>
                             -->
-                        <p class="fragment" data-fragment-index="4" align = "justify"><strong>Tooltips</strong> that highlight country name & corresponding information of life expectancy in both country bubble chart and bar chart, <strong>labels</strong> of each area bubble highlighting 
-                            the area name and corresponding average life expectancy in area bubble chart and <strong>legends</strong> for each group and two specific countries that highlight assigned 4 groups in country bubble chart and 2 countries in bar chart.</p>
+                        <p class="fragment" data-fragment-index="4" align = "justify"><strong>Tooltips</strong> that highlight country name & corresponding information of life expectancy in both country bubble chart and bar chart
+                            when moving mouse over a bubble or chart; <strong>labels</strong> of each area bubble highlighting 
+                            the area name and corresponding average life expectancy in area bubble chart, <strong>labels</strong> of each y-axis with "Life Expectancy" and x-axis with "Year" in line chart and bar chart;
+                            and <strong>legends</strong> for each group and two specific countries that highlight assigned 4 groups in country bubble chart and 2 countries in bar chart.</p>
                         <li class="fragment" data-fragment-index="5"><strong>Parameters</strong></li>
                         <p class="fragment" data-fragment-index="6">The main parameters of this story are <strong>country & area names</strong>, corresponding information of <strong>life expectancy</strong> and <strong>years</strong>.</p>
                         <li class="fragment" data-fragment-index="7"><strong>Triggers</strong></li>
@@ -108,8 +116,7 @@
                 named "life expectancy at birth, total.csv" which contains all the data of each country, area and world from year 1960 to 2016 (exclude 2017 since data of 2017 are not available). 
                 This visualization mainly talks about the world life expectancy from 1960 to 2016, average life expectancy of each country and area from year 2000 to 2016.
                 Why chose <em><strong>Japan</strong></em> and <em><strong>Sierra Leone</strong></em>? 
-                From the analysis of average life
-                expectancy of each country from year 2000 to year 2016, <em><strong>Japan</strong></em> has the largest average life expectany and <em><strong>Sierra Leone</strong></em> has the 
+                From the analysis of average life expectancy of each country from year 2000 to year 2016, <em><strong>Japan</strong></em> has the largest average life expectany and <em><strong>Sierra Leone</strong></em> has the 
                 smallest average life expectancy. The last scene with bar chart shows the life expectancy, sum and the difference of <em><strong>Japan & Sierra Leone</strong></em> from year 2000 to year 2016 (exclude 2017 since data of 2017 are not available).
                 I used python to generate useful data file and filter data.</small>
                 <!-- end of content -->
@@ -119,6 +126,7 @@
                     <!--content of vertical slide 1-->
                     <small>Life Expectancy at birth of the World from year 1960 to year 2016</small>
                     <div id='world_le'></div> 
+                    <small>Use mouse to select year range to zoom and brush.</small>
                     <!-- end of content -->
                 </section>
                 <section>
@@ -131,15 +139,17 @@
                     <!--content of vertical slide 3-->
                     <small align = "justify" style = "text-indent: 50px">Then the next slide presents the average life expectancy of each country from year 2000 to 2016.
                         Based on the data analysis, the average life expectancy of world from year 2000 to 2016 is around 71.
-                        All the countries will assign to 4 different categories by the corresponding average life expectancy ordered randomly by country names.
-                        <strong >Group 1 (blue)</strong> is the countries with average life expectancy in range [75, 85],
-                        <strong>Group 2 (red)</strong> is the countries with average life expectancy in range [71, 75],
-                        <strong>Group 3 (orange)</strong> is the countries with average life expectancy in range [51, 71],
-                        <strong>Group 4 (green)</strong> is the countries with average life expectancy in range [45, 51]. 
+                        All the countries will be assigned to 4 different groups by the corresponding average life expectancy ordered randomly by country names.
+                        <strong >Group 1</strong> (color of blue with the largest circles) is the countries with average life expectancy in range [75, 85],
+                        <strong>Group 2</strong> (color of red with the second largest circles) is the countries with average life expectancy in range [71, 75],
+                        <strong>Group 3</strong> (color of orange with the third largest circles) is the countries with average life expectancy in range [51, 71],
+                        <strong>Group 4</strong> (color of green with the smallest circles) is the countries with average life expectancy in range [45, 51]. The diameter of 
+                        each circle depends on the value of average life expectancy. Tooltip of each circle shows up when moving mouse over a circle and disappears by moving
+                        mouse off a circle. 
                         <u><em><strong>All countries</strong></em></u> button is set up by default. 
                         Click on <u><em><strong>By groups</strong></em></u> button to view average life expectancy from 2000 to 2016 of all countries by groups. 
-                        Click <u><em><strong>All countries</strong></em></u> button after clicking <u><em><strong>By groups</strong></em></u> button will show
-                        all the bubbles ordered by group levels. 
+                        Click <u><em><strong>All countries</strong></em></u> button again after clicking <u><em><strong>By groups</strong></em></u> button will show
+                        all the bubbles ordered by group levels(from left to right are group 1, group 2, group 3, group 4). 
                     </small>
                     <!-- end of content -->
                 </section>
@@ -174,7 +184,9 @@
                         The bottom green bars stand for life expectancy of <strong>Sierra Leone</strong>, the upper blue bars stand for <strong>Japan</strong>. Tooltips of blue bars (life expectancy of Japan)
                         show the sum of the two countries of a certain year, the country name of Japan, the life expectancy in the same year, the difference of life expectancy between two 
                         countries and year. Tooltips of green bars show the country name of Sierra Leone, the life expectancy in the same year, the difference of life expectancy between two 
-                        countries (the same absolute number of the difference shows in tooltip of Japan, but with opposite sign) and year. 
+                        countries (the same absolute number of the difference shows in tooltip of Japan, but with opposite sign) and year. Tooltip of each bar shows up and the filled color of the bar changes
+                        when moving mouse over a bar. Tooltip disappears and the fill color changes back to original filled color by moving mouse off a bar. 
+                        mouse off a bar. 
                     </small>
                     <!-- end of content -->
                 </section>

@@ -92,7 +92,7 @@ svg.append('g')
     .attr('transform', 'rotate(0)translate(+' + 450 + ',60)')
     .style('text-anchor', 'middle')
     .style('fill', 'black')
-    .attr('dy', '-1.5em')
+    .attr('dy', '-2.5em')
     .style('font-size', 12)
     .text('Year')
     ;

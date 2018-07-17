@@ -86,9 +86,8 @@ var yAxis_bar = d3.axisLeft(leScale);
   
   // draw the axes
 var xAxisEle = svg.append('g')
-        .classed("x axis", true)
+        .classed("x axis", "true").attr('transform', 'translate(0,' + height + ')')
         .call(xAxis_bar);
-
 var xText = xAxisEle.append('text')
     .attr('transform', 'rotate(0)translate(+' + 400+ ',60)')
     .style('text-anchor', 'middle')

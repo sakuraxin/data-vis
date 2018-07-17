@@ -95,7 +95,7 @@ svg.append('g')
     .style('fill', 'black')
     .attr('dy', '-1.5em')
     .style('font-size', 14)
-    .text('Life Expectancy');
+    .text('Year');
 
 var yAxisEle = svg.append('g')
     .classed('y axis', true)

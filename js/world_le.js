@@ -87,22 +87,14 @@ d3.csv("data/world life expectanct at birth, total.csv", type, function(error, d
     focus.append("g")
         .attr("class", "axis axis--x")
         .attr("transform", "translate(0," + height + ")")
-        .call(xAxis)
-        .append('text')
-        //.attr('transform', 'rotate(0)translate(-' + height/2 + ',0)')
-        .style('text-anchor', 'middle')
-        .style('fill', 'black')
-        .attr('dy', '-2.5em')
-        .style('font-size', 12)
-        .text('Year')
-        ;
+        .call(xAxis);
         
 
     focus.append("g")
         .attr("class", "axis axis--y")
         .call(yAxis)
         .append('text')
-        .attr('transform', 'rotate(-90)translate(-' + width/2 + ',0)')
+        .attr('transform', 'rotate(-90)translate(-' + height/2 + ',0)')
         .style('text-anchor', 'middle')
         .style('fill', 'black')
         .attr('dy', '-2.5em')

@@ -111,7 +111,7 @@ d3.csv("data/world life expectanct at birth, total.csv", type, function(error, d
         .attr("transform", "translate(0," + height2 + ")")
         .call(xAxis2)
         .append('text')
-        .attr('transform', 'rotate(0)translate(-' + width/2 + ',0)')
+        .attr('transform', 'rotate(0)translate(-' + 450 + ',60)')
         .style('text-anchor', 'middle')
         .style('fill', 'black')
         .attr('dy', '-2.5em')

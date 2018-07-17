@@ -109,7 +109,15 @@ d3.csv("data/world life expectanct at birth, total.csv", type, function(error, d
     context.append("g")
         .attr("class", "axis axis--x")
         .attr("transform", "translate(0," + height2 + ")")
-        .call(xAxis2);
+        .call(xAxis2)
+        .append('text')
+        .attr('transform', 'rotate(0)translate(-' + width/2 + ',0)')
+        .style('text-anchor', 'middle')
+        .style('fill', 'black')
+        .attr('dy', '-2.5em')
+        .style('font-size', 12)
+        .text('Year')
+        ;
 
     context.append("g")
         .attr("class", "brush")

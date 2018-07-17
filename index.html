@@ -71,7 +71,9 @@
                         The four scenes follow the structure as followings: the first scene focuses on the world life expectancy from year 1960 to 2016;
                         the second scene focuses on the average life expectancy during year 2000 and year 2016 of each area; 
                         the third scene focuses on the average life expectancy during the same year period of each country;
-                        the last scene focuses on the life expectancy during the same year period of two selected countries with larest and smallest average life expectancy. </br>
+                        the last scene focuses on the life expectancy during the same year period of two selected countries with largest and smallest average life expectancy. 
+                    </p></br>
+                    <p align = "justify">  
                         The four charts/scenes in this visualization:
                         <li align = "left">Line chart shows the world life expectancy from year 1960 to year 2016.</li>
                         <li align = "left">Two Bubble charts: area bubble chart shows the average life expectancy of each area from year 2000 to year 2016 
@@ -126,16 +128,19 @@
                     <!--content of vertical slide 1-->
                     <small>Life Expectancy at birth of the World from year 1960 to year 2016</small>
                     <div id='world_le'></div> 
-                    <em><font size = "5">Use mouse to select year range to zoom and brush.</font></em>
+                    <em><font size = "4">Use mouse to select year range to zoom and brush.</font></em>
                     <!-- end of content -->
                 </section>
                 <section>
                     <!--content of vertical slide 2-->
-                    <small>Average Life Expectancy of each Area from year 2000 to year 2016</small>
-                    <font size = "5" align = "justify">Each bubble with different color stand for each area, the number presents the value of
-                        average life expectancy during year 2000 and year 2016. The diameter of bubble is proportional to the value of average
-                        life expectancy. 
-                    </font>
+                    <small>Average Life Expectancy of each Area from year 2000 to year 2016</small></br>
+                    <em>
+                        <font size = "3" align = "justify">Each bubble with different color stand for each area, the number presents the value of
+                                average life expectancy during year 2000 and year 2016. The diameter of bubble is proportional to the value of average
+                                life expectancy. 
+                            </font>
+                    </em>
+                    
                     <div id='bubbles_area', style="max-height: 80%"></div>
                     <!-- end of content -->
                 </section>
@@ -159,7 +164,12 @@
                 </section>
                 <section>
                     <!--content of vertical slide 4-->
-                    <small>Average Life Expectancy of each Country from year 2000 to 2016</small>
+                    <small>Average Life Expectancy of each Country from year 2000 to 2016</small></br>
+                    <em>
+                        <font size = "3">Move mouse over a circle to highlight and show tooltip. The tooltip disappears
+                        when moving mouse off a circle. Click buttons to visulize bubbles differently (details in last slide). 
+                        </font>
+                    </em>
                     <div class="container">
 
                         <div style="margin-left:60px;" id="toolbar">
@@ -199,9 +209,12 @@
                     <small>Life Expectancy of Japan and Sierra Leone from 2000 to 2016</small>
                     
                     <div id='stackedbar'></div>
-                    <small align = "justify">Move mouse over a bar to show the different hilighted color and show the tooltip.
-                        Move mouse off a bar to clear the tooltip.
-                    </small>
+                    <em>
+                        <font size = "3" align = "justify">Move mouse over a bar to show the different highlighted color and the tooltip.
+                                Move mouse off a bar to clear the tooltip.
+                            </font>
+                    </em>
+                    
                     <div id="categoryLegend">
                             <div class="categoryLegend"> <p class="category-name"><span class="key-dot Japan"></span>&ensp;Life Expectancy of Japan&ensp;
                             </p> </div>

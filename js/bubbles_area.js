@@ -1,12 +1,12 @@
 dataset = {
     "children": [
-        {"area": "East Asia & Pacific", 'le' : 73.79},
         {"area": "North America", 'le' : 78.24},
+        {"area": "Europe & Central Asia", 'le' : 75.25},
+        {"area": "East Asia & Pacific", 'le' : 73.79},
         {"area": "Latin America & Caribbean", 'le' : 73.66},
-        {"area": "Sub-Saharan Africa", 'le' : 55.38},
         {"area": "Middle East & North Africa", 'le' : 71.76},
         {"area": "South Asia", 'le' : 65.96},
-        {"area": "Europe & Central Asia", 'le' : 75.25}
+        {"area": "Sub-Saharan Africa", 'le' : 55.38},
     ]
 };
 

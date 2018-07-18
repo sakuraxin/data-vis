@@ -250,7 +250,7 @@ function bubbleChart() {
     var content = '<span class="name">Country: </span><span class = "value">' +
                   d.country +
                   '</span><br/>' +
-                  '<span class="name">Average life expetancy: </span><span class="value">' +
+                  '<span class="name">Average life expectancy: </span><span class="value">' +
                   addCommas(d.value) +
                   '</span><br/>';
 

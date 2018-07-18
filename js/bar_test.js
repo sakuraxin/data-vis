@@ -145,7 +145,7 @@ var content = '<span class="name">Sum of life expectancy: </span><span class="va
                 '<span class="name">Country: </span><span class = "value">' +
                 "Japan" +
                 '</span><br/>' +  
-                '<span class="name">Average life expetancy: </span><span class="value">' +
+                '<span class="name">Average life expectancy: </span><span class="value">' +
                 japanle[i] + '<span class="name">  Difference: </span><span class="value">' +
                 (japanle[i] - sierrale[i]).toFixed(1) + 
                 '</span><br/>' + 
@@ -207,7 +207,7 @@ d3.select(this).attr('stroke', 'black').attr('fill', "navajowhite").attr('stroke
 var content = '<span class="name">Country: </span><span class = "value">' +
                 "Sierra Leone" +
                 '</span><br/>' +
-                '<span class="name">Average life expetancy: </span><span class="value">' +
+                '<span class="name">Average life expectancy: </span><span class="value">' +
                 sierrale[i] + '<span class="name">  Difference: </span><span class="value">' +
                 (-japanle[i] + sierrale[i]).toFixed(1) + 
                 '</span><br/>' + 

@@ -61,17 +61,19 @@
                 <small>
                     <p align = "justify">This visualization uses the Interactive Slideshow to tell the story of 
                         <u><strong><a href="http://databank.worldbank.org/data/reports.aspx?source=health-nutrition-and-population-statistics">LIFE EXPECTANCY</a></strong></u>.
-                    Built on scenes following a template of visual consistency , with various annotations, parameters and some triggers (will be explained more in the next slide). 
+                    Built on scenes following a template of visual consistency , with various annotations, parameters and some triggers (will be explained more in the next two slides). 
         
                     More details of data cleaning information go here:   
                     <em><strong><a href="#slide_4">ABOUT THE DATASET</a></strong></em> (slide 4).
                     
                     </p>
                     <p align = "justify">
-                        The four scenes follow the structure as followings: the first scene focuses on the world life expectancy from year 1960 to 2016;
-                        the second scene focuses on the average life expectancy during year 2000 and year 2016 of each area; 
-                        the third scene focuses on the average life expectancy during the same year period of each country;
-                        the last scene focuses on the life expectancy during the same year period of two selected countries with largest and smallest average life expectancy. 
+                        The four scenes follow the structure as followings: 
+                        <li align="left">The first scene focuses on the <strong>world</strong> life expectancy from year 1960 to 2016;</li>
+                        <li align="lefr">The second scene focuses on the average life expectancy during year 2000 and year 2016 of each <strong>area/strong>;</li>
+                        <li align="left">The third scene focuses on the average life expectancy during the same year period of each <strong>country</strong>;</li>
+                        <li align = "left">The last scene focuses on the life expectancy during the same year period of two selected countries with 
+                            largest and smallest average life expectancy. </li>   
                     </p>
                     <p align = "justify">  
                         The four charts/scenes in this visualization:
@@ -86,7 +88,9 @@
             <section>
                 <!--content of slide 3-->
                 <h8>Elements of This Visualization</h8>
+                <!--
                 <small style = "font-size: 2" align = "justify">Belows are the overview of elements and more details will be explained in the chart slide or in the slide right ahead of the chart slide. </small>
+                -->
                 <small>
                     <ol>
                         <li class="fragment" data-fragment-index="1"><strong>Scenes</strong></li>
@@ -94,23 +98,51 @@
                             Each slide can be navigated through guiding arrows in the right bottom corner.
                         Press <em><strong>Esc</strong></em> key at any point to get an overview of all slides.
                         </p>
-                        <li class="fragment" data-fragment-index="3"><strong>Annotations</strong>: including tooltips, legends and labels
-                            <!--
-                            More details of each scence go here:   
-                            <u><em><strong><a href="#slide_4">ABOUT THE DATASET</a></strong></em></u> (slide 4). </li>
-                            -->
-                        <p class="fragment" data-fragment-index="4" align = "justify"><strong>Tooltips</strong> that highlight country name & corresponding information of life expectancy in both country bubble chart and bar chart
-                            when moving mouse over a bubble or chart; <strong>labels</strong> of each area bubble highlighting 
-                            the area name and corresponding average life expectancy in area bubble chart, <strong>labels</strong> of each y-axis with "Life Expectancy" and x-axis with "Year" in line chart and bar chart;
-                            and <strong>legends</strong> for each group and two specific countries that highlight assigned 4 groups in country bubble chart and 2 countries in bar chart.</p>
+                        <li class="fragment" data-fragment-index="5"><strong>Parameters</strong></li>
+                        <p class="fragment" data-fragment-index="6">The main parameters of this story are <strong>country & area names</strong>, corresponding information of <strong>life expectancy</strong> and <strong>years</strong>.</p>
+                        <li class="fragment" data-fragment-index="7"><strong>Triggers</strong></li>
+                        <p class="fragment" data-fragment-index="8"><strong>Zoom and Brush</strong> of x-axis (year) in line chart to filter data of world life expectancy, 
+                            <strong>buttons</strong> in country bubbles chart to trigger updates of visualization with new parameters of groups.</p>
+                        <!--
                         <li class="fragment" data-fragment-index="5"><strong>Parameters</strong></li>
                         <p class="fragment" data-fragment-index="6">The main parameters of this story are <strong>country & area names</strong>, corresponding information of <strong>life expectancy</strong> and <strong>years</strong>.</p>
                         <li class="fragment" data-fragment-index="7"><strong>Triggers</strong></li>
                         <p class="fragment" data-fragment-index="8"><strong>Zoom and Brush</strong> of time axis in line chart to filter data of world life expectancy, <strong>buttons</strong> in country bubbles chart to trigger updates with parameters of groups.</p>
+                        -->
                     </ol>
                 </small>
                 <!-- end of content -->
             </section>
+            <section>
+                    <!--content of slide 3_2-->
+                    <h8>Elements of This Visualization (continued)</h8>
+                    <!--
+                    <small style = "font-size: 2" align = "justify">Belows are the overview of elements and more details will be explained in the chart slide or in the slide right ahead of the chart slide. </small>
+                    -->
+                    <small>
+                        <ol>
+                            <li class="fragment" data-fragment-index="3"><strong>Annotations</strong>: including tooltips, legends and labels
+                                <!--
+                                More details of each scence go here:   
+                                <u><em><strong><a href="#slide_4">ABOUT THE DATASET</a></strong></em></u> (slide 4). </li>
+                                -->
+                            <p class="fragment" data-fragment-index="4" align = "justify"><strong>Tooltips</strong> follow a template for visual consistency.</br>
+                                1. Tooltips in country bubble chart with information of country name and corresponding average life expectancy 
+                                show up by moving mouse over a bubble. When a tooptip shows up, the corresponding bubble will be highlighted by 
+                                changing the stroke color to black. Tooltip disappears by moving mouse off a certain bubble. </br>
+                                2. Tooltips in bar chart shows up by moving mouse over a bar. When a tooptip shows up, the corresponding bar will be highlighted by 
+                                changing the filled color. Tooltip disappears by moving mouse off a certain bar.</br>
+                                <strong>Labels</strong> </br> 
+                                1. Labels in area bubble char show in the center of bubble with information of area name and corresponding average life expectancy.</br>
+                                2. Labels in both line chart and bar chart: y-axis stands for value of  "Life Expectancy" and x-axis stands for "Year". </br>
+                                <strong>Legends</strong> </br>
+                                1. Legends in country bubble chart: Assgin color of blue, red, orange and green to group 1, group 2, group 3 and group 4. </br>
+                                2. Legends in bar chart: assign original filled color of blue and green to country Japan and Sierra Leone. 
+                            </p> 
+                        </ol>
+                    </small>
+                    <!-- end of content -->
+                </section>
             <section id = "slide_4">
                 <!--content of slide 4-->
                 <h4>About the dataset</h4>
@@ -163,11 +195,12 @@
                 <section>
                     <!--content of vertical slide 4-->
                     <small>Average Life Expectancy of each Country from year 2000 to 2016</small> </br>
-                    <em>
-                        <font size = "2" align = "justify">Move mouse over a circle to highlight and show tooltip. The tooltip disappears
+                    <small align = "justify" style="font-size: 35%">
+                        <em>Move mouse over a circle to highlight and show tooltip. The tooltip disappears
                         when moving mouse off a circle. Click buttons to visulize bubbles differently (details in last slide). 
-                        </font>
-                    </em>
+                        </em>
+                    </small>
+                    
                     <div class="container">
 
                         <div style="margin-left:60px;" id="toolbar">
@@ -207,7 +240,7 @@
                     <small>Life Expectancy of Japan and Sierra Leone from 2000 to 2016</small>
                     
                     <div id='stackedbar'></div>
-                    <small style="font-size: 2" align = "justify">
+                    <small style="font-size: 35%" align = "justify">
                         <em>Move mouse over a bar to show the different highlighted color and the tooltip. Move mouse off a bar to clear the tooltip.
                         </em>
                                 

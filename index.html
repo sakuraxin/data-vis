@@ -125,18 +125,19 @@
                         More details of each scence go here:   
                         <u><em><strong><a href="#slide_4">ABOUT THE DATASET</a></strong></em></u> (slide 4). </li>
                         -->
-                    <p align = "justify"><strong>Tooltips</strong> follow a template for visual consistency: </br>
+                    <p align = "justify" style="font-size: 90%"><strong>Tooltips</strong> follow a template for visual consistency: </br>
                         1. Tooltips in country bubble chart with information of country name and corresponding average life expectancy 
-                        show up by moving mouse over a bubble. When a tooptip shows up, the corresponding bubble will be highlighted by 
+                        show up by moving mouse over a bubble. When a tooltip shows up, the corresponding bubble will be highlighted by 
                         changing the stroke color to black. Tooltip disappears by moving mouse off a certain bubble. </br>
                         2. Tooltips in bar chart shows up by moving mouse over a bar. When a tooltip shows up, the corresponding bar will be highlighted by 
-                        changing the filled color and changing stroke to color balck. Tooltip disappears by moving mouse off a certain bar. The detailed information of tooltips in 
+                        changing the filled color and changing stroke to color black. Tooltip disappears by moving mouse off a certain bar. The detailed information of tooltips in 
                         bar chart could be found in <em><strong><a href="#slide_10">Slide 10</a></strong></em>. </br>
                         <strong>Labels</strong>: </br>
                         1. Labels in area bubble chart shown in the center of each bubble with information of area name and corresponding average life expectancy.</br>
                         2. Labels in both line chart and bar chart: y-axis stands for value of  "Life Expectancy" and x-axis stands for "Year". </br>
                         <strong>Legends</strong>: </br>
-                        1. Legends in country bubble chart: assgin color of blue, red, orange and green to group 1, group 2, group 3 and group 4.</br>
+                        1. Legends in country bubble chart: assgin color of blue, red, orange and green to group 1, group 2, group 3 and group 4 
+                        respectively.</br>
                         2. Legends in bar chart: assign original filled color of blue and green to country Japan and Sierra Leone. 
                     </p> 
                 </small>
@@ -147,10 +148,12 @@
                 <h4>About the dataset</h4>
                 <small align = "justify" style = "text-indent: 50px">The dataset could be found through <u><strong><a href="http://databank.worldbank.org/data/reports.aspx?source=health-nutrition-and-population-statistics">LIFE EXPECTANCY</a></strong></u>, 
                 named "life expectancy at birth, total.csv" which contains all the data of each country, area and world from year 1960 to 2016 (exclude 2017 since data of 2017 are not available). 
-                This visualization mainly talks about the world life expectancy from 1960 to 2016, average life expectancy of each country and area from year 2000 to 2016.
-                Why chose <em><strong>Japan</strong></em> and <em><strong>Sierra Leone</strong></em>? 
+                This visualization mainly talks about the world life expectancy from 1960 to 2016, average life expectancy of each country and area from year 2000 to 2016.</small>
+                <small align = "justify" style = "text-indent: 50px">
+                Why chose <em><strong>Japan</strong></em> and <em><strong>Sierra Leone</strong></em>? </small>
+                <small align = "justify" style = "text-indent: 50px">
                 From the analysis of average life expectancy of each country from year 2000 to year 2016, <em><strong>Japan</strong></em> has the largest average life expectany and <em><strong>Sierra Leone</strong></em> has the 
-                smallest average life expectancy. The last scene with bar chart shows the life expectancy, sum and the difference of <em><strong>Japan & Sierra Leone</strong></em> from year 2000 to year 2016 (exclude 2017 since data of 2017 are not available).
+                smallest average life expectancy. The last scene with bar chart shows the life expectancy, sum and the difference of life expectany of <em><strong>Japan & Sierra Leone</strong></em> from year 2000 to year 2016 (exclude 2017 since data of 2017 are not available).
                 I used python to generate useful data file and filter data.</small>
                 <!-- end of content -->
             </section>
@@ -178,12 +181,12 @@
                     <small align = "justify" style = "text-indent: 50px">Then the next slide presents the average life expectancy of each country from year 2000 to 2016.
                         Based on the data analysis, the average life expectancy of world from year 2000 to 2016 is around 71.
                         All the countries will be assigned to 4 different groups by the corresponding average life expectancy ordered randomly by country names.
-                        <strong >Group 1</strong> (color of blue with the largest circles) is the countries with average life expectancy in range [75, 85],
-                        <strong>Group 2</strong> (color of red with the second largest circles) is the countries with average life expectancy in range [71, 75],
-                        <strong>Group 3</strong> (color of orange with the third largest circles) is the countries with average life expectancy in range [51, 71],
-                        <strong>Group 4</strong> (color of green with the smallest circles) is the countries with average life expectancy in range [45, 51]. The diameter of 
+                        <li><strong >Group 1</strong> (color of blue with the largest circles) is the countries with average life expectancy in range [75, 85].</li>
+                        <li><strong>Group 2</strong> (color of red with the second largest circles) is the countries with average life expectancy in range [71, 75].</li>
+                        <li><strong>Group 3</strong> (color of orange with the third largest circles) is the countries with average life expectancy in range [51, 71].</li>
+                        <li><strong>Group 4</strong> (color of green with the smallest circles) is the countries with average life expectancy in range [45, 51]. The diameter of 
                         each circle is proportional to the value of average life expectancy. Tooltip of each circle shows up when moving mouse over a circle and disappears by moving
-                        mouse off a circle. 
+                        mouse off a circle. </li>
                         <u><em><strong>All countries</strong></em></u> button is set up by default. 
                         Click on <u><em><strong>By groups</strong></em></u> button to view average life expectancy from 2000 to 2016 of all countries by groups. 
                         Click <u><em><strong>All countries</strong></em></u> button again after clicking <u><em><strong>By groups</strong></em></u> button will show
@@ -196,8 +199,8 @@
                     <small>Average Life Expectancy of each Country from year 2000 to 2016</small> </br>
                     <small align = "justify" style="font-size: 35%">
                         <em>Move mouse over a circle to highlight and show tooltip. The tooltip disappears
-                        when moving mouse off a circle. Click "By groups" buttons to visulize bubbles differently. Click "All groups" after viewing
-                        bubbles by group will show the bubbles grouped by colors (order from left to right is blue bubbles, red bubbles, orange bubbles and green bubbles).
+                        when moving mouse off a circle. Click "By groups" buttons to visulize bubbles differently. Clicking "All groups" after viewing
+                        bubbles by groups will show the bubbles grouped by colors (order from left to right is blue bubbles, red bubbles, orange bubbles and green bubbles).
                         </em>
                     </small>
                     
@@ -226,12 +229,12 @@
                         two countries with largest average life expectancy and smallest average life expectancy from year 2000 to year 2016. The bar chart shows the sum and difference of life expectancy of Japan and Sierra Leone from year 2000 to year 2016. </br>
                     </small>
                         <small align = "justify" style = "text-indent: 50px">
-                        The last stacked bar chart shows the life expectancy of <strong>Japan</strong> and <strong>Sierra Leone</strong> from 2000 to 2016. 
+                        The last bar chart shows the life expectancy of <strong>Japan</strong> and <strong>Sierra Leone</strong> from 2000 to 2016. 
                         The bottom green bars stand for life expectancy of <strong>Sierra Leone</strong>, the upper blue bars stand for <strong>Japan</strong>. Tooltips of blue bars (life expectancy of Japan)
                         show the sum of the two countries of a certain year, the country name of Japan, the life expectancy in the same year, the difference of life expectancy between two 
                         countries and year. Tooltips of green bars show the country name of Sierra Leone, the life expectancy in the same year, the difference of life expectancy between two 
-                        countries (the same absolute number of the difference shows in tooltip of Japan, but with opposite sign) and year. Tooltip of each bar shows up, the filled color of  and the stroke color of the bar change
-                        when moving mouse over a bar. Tooltip disappears and the fill color changes back to original filled color by moving mouse off a bar. 
+                        countries (the same absolute number of the difference shows in tooltip of Japan, but with opposite sign) and year. Tooltip of each bar shows up, the filled color of and the stroke color of the bar change
+                        when moving mouse over a bar. Tooltip disappears and the filled color changes back to original filled color by moving mouse off a bar. 
                     </small>
                     <!-- end of content -->
                 </section>
@@ -241,7 +244,7 @@
                     
                     <div id='stackedbar'></div>
                     <small style="font-size: 35%" align = "justify">
-                        <em>Move mouse over a bar to show the different highlighted color and the tooltip. Move mouse off a bar to clear the tooltip. More details in previous slide.
+                        <em>Move mouse over a bar to show the different highlighted colors and the tooltips. Move mouse off a bar to clear the tooltip. More details in previous slide.
                         </em>
                                 
                     </small>

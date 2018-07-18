@@ -52,6 +52,7 @@
                     <p><small>Data source could be found through the link: <u><strong><a href="http://databank.worldbank.org/data/reports.aspx?source=health-nutrition-and-population-statistics">LIFE EXPECTANCY</a></strong></u> </small></p>
                     <p><small>July 2018</small></p>
                     <p><small>Xin Qu</small></p>
+                    <p><small><em>Please <strong>MAXIMIZE</strong> the browser to optimize the view of slides, charts and tooltips.</em></small></p>
                 </div>
                 <!-- end of content -->
             </section>
@@ -95,7 +96,7 @@
                 <small>
                     <ol>
                         <li class="fragment" data-fragment-index="1"><strong>Scenes</strong></li>
-                        <p class="fragment" data-fragment-index="2">There are 12 slides, including four scenes in this presentation.
+                        <p class="fragment" data-fragment-index="2">There are 12 slides, including four scenes in this presentation. 
                             Each slide can be navigated through guiding arrows in the right bottom corner.
                         Press <em><strong>Esc</strong></em> key at any point to get an overview of all slides.
                         </p>
@@ -125,7 +126,7 @@
                         More details of each scence go here:   
                         <u><em><strong><a href="#slide_4">ABOUT THE DATASET</a></strong></em></u> (slide 4). </li>
                         -->
-                    <p align = "justify" style="font-size: 90%"><strong>Tooltips</strong> follow a template for visual consistency: </br>
+                    <p align = "justify" style="font-size: 90%"><strong>Tooltips</strong> follow a template for visual consistency (see file "tooltip.js" for details): </br>
                         1. Tooltips in country bubble chart with information of country name and corresponding average life expectancy 
                         show up by moving mouse over a bubble. When a tooltip shows up, the corresponding bubble will be highlighted by 
                         changing the stroke color to black. Tooltip disappears by moving mouse off a certain bubble. </br>
@@ -136,9 +137,9 @@
                         1. Labels in area bubble chart shown in the center of each bubble with information of area name and corresponding average life expectancy.</br>
                         2. Labels in both line chart and bar chart: y-axis stands for value of  "Life Expectancy" and x-axis stands for "Year". </br>
                         <strong>Legends</strong>: </br>
-                        1. Legends in country bubble chart: assign color of blue, red, orange and green to group 1, group 2, group 3 and group 4 
+                        1. Legends in country bubble chart: assign colors of blue, red, orange and green to group 1, group 2, group 3 and group 4 
                         respectively.</br>
-                        2. Legends in bar chart: assign original filled color of blue and green to country Japan and Sierra Leone. 
+                        2. Legends in bar chart: assign original filled colors of blue and green to country Japan and Sierra Leone respectively. 
                     </p> 
                 </small>
                 <!-- end of content -->
@@ -169,7 +170,7 @@
                     <small>Average Life Expectancy of each Area from year 2000 to year 2016</small>
                     <small style="font-size: 40%" align = "justify">
                         <em>Each bubble with different colors stands for each area, the number presents the value of average life expectancy during year 2000 and year 2016. The diameters of bubbles are proportional to the values of average
-                        life expectancy. Colors depend on "d3.schemeCategory20" with decreasing value of average life expectancy of each area. 
+                        life expectancy. Colors depend on the order of "d3.schemeCategory20" with decreasing value of average life expectancy of each area. 
                         </em>
                     </small>
                     <div id='bubbles_area', style="max-height: 80%"></div>
@@ -190,7 +191,8 @@
                         mouse off a circle. <u><em><strong>All countries</strong></em></u> button is set up by default. 
                         Click <u><em><strong>By groups</strong></em></u> button to view average life expectancy from 2000 to 2016 of all countries by groups. 
                         Click <u><em><strong>All countries</strong></em></u> button after clicking <u><em><strong>By groups</strong></em></u> button will show
-                        all the bubbles ordered by group levels (from left to right are group 1, group 2, group 3, group 4).
+                        all the bubbles ordered by group levels (from left to right are group 1, group 2, group 3, group 4). Please <strong>refresh</strong> the 
+                        page to view All countries by default (ordered randomly by country names). 
                     </small>
                     <!-- end of content -->
                 </section>
@@ -200,7 +202,8 @@
                     <small align = "justify" style="font-size: 35%">
                         <em>Move mouse over a circle to highlight and show tooltip. The tooltip disappears
                         when moving mouse off a circle. Click "By groups" buttons to visualize bubbles differently. Clicking "All groups" after viewing
-                        bubbles by groups will show the bubbles grouped by colors (order from left to right is blue bubbles, red bubbles, orange bubbles and green bubbles).
+                        bubbles by groups will show the bubbles grouped by colors (order from left to right is blue bubbles, red bubbles, orange bubbles and green bubbles). 
+                        Please <strong>refresh</strong> the page to view All countries by default orders (ordered randomly by country names). 
                         </em>
                     </small>
                     

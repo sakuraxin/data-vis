@@ -79,7 +79,7 @@ var leScale = d3.scaleLinear()
     .domain([30, 140])
     .range([height, 0]);
   
-var xAxis_bar = d3.axisBottom(yearScale).tickSizeOuter(0);
+var xAxis_bar = d3.axisBottom(yearScale).tickSizeOuter(6);
   //console.log(xAxis_bar);
 var yAxis_bar = d3.axisLeft(leScale);
   

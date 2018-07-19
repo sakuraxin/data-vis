@@ -61,7 +61,7 @@ var svg = d3.select('#stackedbar').append('svg')
     // this g is where the bar chart will be drawn
     .append('g')
     // translate it to leave room for the left and top margins
-    .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+    .attr('transform', 'translate(' + margin.left + ',' + margin.left + ')');
 
 // x value determined by year
 //var x = d3.scaleTime().range([0, width]);
@@ -89,7 +89,7 @@ svg.append('g')
     .classed("x axis", "true")
     .attr('transform', 'translate(0,' + height + ')')
     .call(xAxis_bar)
-    //.attr("d", "M0.5,6V0.5H805.5V06")
+    .attr("d", "M0.5,6V0.5H805.5V06")
     .append('text')
     .attr('transform', 'rotate(0)translate(+' + 400+ ',60)')
     .style('text-anchor', 'middle')

@@ -10,7 +10,7 @@ function bubbleChart() {
 
   // Locations to move bubbles towards, depending
   // on which view mode is selected.
-  var center = { x: width / 2, y: height / 2 - 10};
+  var center = { x: width / 2, y: height / 2 - 60};
 
 
   var yearCenters = {

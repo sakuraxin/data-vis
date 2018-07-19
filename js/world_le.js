@@ -98,7 +98,7 @@ d3.csv("data/world life expectanct at birth, total.csv", type, function(error, d
         .style('text-anchor', 'middle')
         .style('fill', 'black')
         .attr('dy', '-2.5em')
-        .style('font-size', 12)
+        .style('font-size', 14)
         .text('Life Expectancy');
 
     context.append("path")
@@ -115,7 +115,7 @@ d3.csv("data/world life expectanct at birth, total.csv", type, function(error, d
         .style('text-anchor', 'middle')
         .style('fill', 'black')
         .attr('dy', '-2.5em')
-        .style('font-size', 12)
+        .style('font-size', 14)
         .text('Year')
         ;
 

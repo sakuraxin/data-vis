@@ -22,9 +22,9 @@ function bubbleChart() {
 
   // X locations of the year titles.
   var yearsTitleX = {
-    1: 180,
+    1: 150,
     2: (width / 2) - 120,
-    3: width - 400, 
+    3: width - 500, 
     4: width-200
   };
 

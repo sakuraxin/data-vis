@@ -38,7 +38,7 @@ function bubbleChart() {
 
 
   function charge(d) {
-    return -Math.pow(d.radius, 2.0) * forceStrength;
+    return -Math.pow(d.radius, 3.0) * forceStrength;
   }
 
   // Here we create a force layout and

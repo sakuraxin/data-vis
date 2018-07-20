@@ -38,7 +38,7 @@ function bubbleChart() {
 
 
   function charge(d) {
-    return -Math.pow(d.radius, 1.5) * forceStrength;
+    return -Math.pow(d.radius, 2.0) * forceStrength;
   }
 
   // Here we create a force layout and
@@ -49,8 +49,7 @@ function bubbleChart() {
     .force('x', d3.forceX().strength(forceStrength).x(center.x))
     .force('y', d3.forceY().strength(forceStrength).y(center.y))
     .force('charge', d3.forceManyBody().strength(charge))
-    .force('collision', d3.forceCollide().radius(function(d) {
-      return d.radius + 0.1})) //prevent overlapping
+    //.force('collision', d3.forceCollide().radius(function(d) {return d.radius + 0.1})) //prevent overlapping
     .on('tick', ticked);
 
 
@@ -71,7 +70,7 @@ function bubbleChart() {
     var radiusScale = d3.scalePow()
       .exponent(0.5)
       .range([3, 15])
-      .domain([35, 85]);
+      .domain([40, 85]);
       
     var myNodes = rawData.map(function (d) {
         //console.log(d)  //check data

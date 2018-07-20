@@ -22,9 +22,9 @@ function bubbleChart() {
 
   // X locations of the year titles.
   var yearsTitleX = {
-    1: 150,
+    1: 180,
     2: (width / 2) - 120,
-    3: width - 500, 
+    3: width - 400, 
     4: width-200
   };
 
@@ -49,7 +49,6 @@ function bubbleChart() {
     .force('x', d3.forceX().strength(forceStrength).x(center.x))
     .force('y', d3.forceY().strength(forceStrength).y(center.y))
     .force('charge', d3.forceManyBody().strength(charge))
-    //.force('collision', d3.forceCollide().radius(function(d) {return d.radius + 0.1})) //prevent overlapping
     .on('tick', ticked);
 
 

@@ -49,6 +49,8 @@ function bubbleChart() {
     .force('x', d3.forceX().strength(forceStrength).x(center.x))
     .force('y', d3.forceY().strength(forceStrength).y(center.y))
     .force('charge', d3.forceManyBody().strength(charge))
+    .force('collision', d3.forceCollide().radius(function(d) {
+      return d.radius}))
     .on('tick', ticked);
 
 

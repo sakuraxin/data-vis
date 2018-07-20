@@ -50,7 +50,7 @@ function bubbleChart() {
     .force('y', d3.forceY().strength(forceStrength).y(center.y))
     .force('charge', d3.forceManyBody().strength(charge))
     .force('collision', d3.forceCollide().radius(function(d) {
-      return d.radius + 0.1}))
+      return d.radius + 0.1})) //prevent overlapping
     .on('tick', ticked);
 
 
@@ -247,7 +247,7 @@ function bubbleChart() {
     */
   function showDetail(d) {
     // change outline to indicate hover state.
-    d3.select(this).attr('stroke', 'black');
+    d3.select(this).attr('stroke', 'black').attr("stroke-width", '3');
 
     var content = '<span class="name">Country: </span><span class = "value">' +
                   d.country +
